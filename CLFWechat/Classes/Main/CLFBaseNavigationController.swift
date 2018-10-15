@@ -18,8 +18,8 @@ class CLFBaseNavigationController: UINavigationController {
         
         //设置导航栏文字颜色和大小
         bar.titleTextAttributes = [
-            NSForegroundColorAttributeName:UIColor.white,
-            NSFontAttributeName:UIFont.systemFont(ofSize: 18)
+            .foregroundColor:UIColor.white,
+            .font:UIFont.systemFont(ofSize: 18)
         ]
         
     }
