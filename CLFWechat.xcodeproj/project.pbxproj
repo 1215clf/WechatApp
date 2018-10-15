@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		146D0DE881712F1259AB70E2 /* Pods_CLFWechat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BE3C8081C393C21F432D82 /* Pods_CLFWechat.framework */; };
 		777F1E28216F6746004628E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E27216F6746004628E7 /* AppDelegate.swift */; };
 		777F1E2A216F6746004628E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E29216F6746004628E7 /* ViewController.swift */; };
 		777F1E2D216F6746004628E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777F1E2B216F6746004628E7 /* Main.storyboard */; };
 		777F1E2F216F6748004628E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 777F1E2E216F6748004628E7 /* Assets.xcassets */; };
 		777F1E32216F6748004628E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777F1E30216F6748004628E7 /* LaunchScreen.storyboard */; };
+		777F1E54216F6760004628E7 /* BarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E3B216F6760004628E7 /* BarButton.swift */; };
+		777F1E55216F6760004628E7 /* LinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E3C216F6760004628E7 /* LinkButton.swift */; };
+		777F1E56216F6760004628E7 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E3E216F6760004628E7 /* UIColor+Extension.swift */; };
+		777F1E57216F6760004628E7 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E3F216F6760004628E7 /* UIButton+Extension.swift */; };
+		777F1E58216F6760004628E7 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E41216F6760004628E7 /* UserViewController.swift */; };
+		777F1E59216F6760004628E7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E42216F6760004628E7 /* LoginViewController.swift */; };
+		777F1E5A216F6760004628E7 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E46216F6760004628E7 /* ContactViewController.swift */; };
+		777F1E5B216F6760004628E7 /* CLFMainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E47216F6760004628E7 /* CLFMainTabbarController.swift */; };
+		777F1E5C216F6760004628E7 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E49216F6760004628E7 /* DiscoveryViewController.swift */; };
+		777F1E5D216F6760004628E7 /* CLFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E4A216F6760004628E7 /* CLFBaseViewController.swift */; };
+		777F1E5E216F6760004628E7 /* WechatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E4C216F6760004628E7 /* WechatViewController.swift */; };
+		777F1E5F216F6760004628E7 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E4E216F6760004628E7 /* MineViewController.swift */; };
+		777F1E60216F6760004628E7 /* CLFBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E4F216F6760004628E7 /* CLFBaseNavigationController.swift */; };
+		777F1E61216F6760004628E7 /* CLFProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E52216F6760004628E7 /* CLFProgressHUD.swift */; };
+		777F1E62216F6760004628E7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E53216F6760004628E7 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01BE3C8081C393C21F432D82 /* Pods_CLFWechat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CLFWechat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BE468BD516DEE607ABB994F /* Pods-CLFWechat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLFWechat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CLFWechat/Pods-CLFWechat.debug.xcconfig"; sourceTree = "<group>"; };
 		777F1E24216F6746004628E7 /* CLFWechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLFWechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		777F1E27216F6746004628E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		777F1E29216F6746004628E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +40,23 @@
 		777F1E2E216F6748004628E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		777F1E31216F6748004628E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		777F1E33216F6748004628E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		777F1E3B216F6760004628E7 /* BarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButton.swift; sourceTree = "<group>"; };
+		777F1E3C216F6760004628E7 /* LinkButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkButton.swift; sourceTree = "<group>"; };
+		777F1E3E216F6760004628E7 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		777F1E3F216F6760004628E7 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		777F1E41216F6760004628E7 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		777F1E42216F6760004628E7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		777F1E46216F6760004628E7 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		777F1E47216F6760004628E7 /* CLFMainTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLFMainTabbarController.swift; sourceTree = "<group>"; };
+		777F1E49216F6760004628E7 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
+		777F1E4A216F6760004628E7 /* CLFBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLFBaseViewController.swift; sourceTree = "<group>"; };
+		777F1E4C216F6760004628E7 /* WechatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WechatViewController.swift; sourceTree = "<group>"; };
+		777F1E4E216F6760004628E7 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		777F1E4F216F6760004628E7 /* CLFBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLFBaseNavigationController.swift; sourceTree = "<group>"; };
+		777F1E51216F6760004628E7 /* CLFWechat-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLFWechat-Bridging-Header.h"; sourceTree = "<group>"; };
+		777F1E52216F6760004628E7 /* CLFProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLFProgressHUD.swift; sourceTree = "<group>"; };
+		777F1E53216F6760004628E7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		F6AF718253E820A52B72AF2A /* Pods-CLFWechat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLFWechat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CLFWechat/Pods-CLFWechat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				146D0DE881712F1259AB70E2 /* Pods_CLFWechat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +76,8 @@
 			children = (
 				777F1E26216F6746004628E7 /* CLFWechat */,
 				777F1E25216F6746004628E7 /* Products */,
+				9FE2268CD12AB96DF8AABB73 /* Pods */,
+				C2125B0D765F90BBE03CF2F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +92,7 @@
 		777F1E26216F6746004628E7 /* CLFWechat */ = {
 			isa = PBXGroup;
 			children = (
+				777F1E39216F6760004628E7 /* Classes */,
 				777F1E27216F6746004628E7 /* AppDelegate.swift */,
 				777F1E29216F6746004628E7 /* ViewController.swift */,
 				777F1E2B216F6746004628E7 /* Main.storyboard */,
@@ -64,6 +103,126 @@
 			path = CLFWechat;
 			sourceTree = "<group>";
 		};
+		777F1E39216F6760004628E7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				777F1E3A216F6760004628E7 /* General */,
+				777F1E3D216F6760004628E7 /* Other */,
+				777F1E40216F6760004628E7 /* User */,
+				777F1E43216F6760004628E7 /* Lib */,
+				777F1E44216F6760004628E7 /* Main */,
+				777F1E50216F6760004628E7 /* Global */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		777F1E3A216F6760004628E7 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				777F1E3B216F6760004628E7 /* BarButton.swift */,
+				777F1E3C216F6760004628E7 /* LinkButton.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		777F1E3D216F6760004628E7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				777F1E3E216F6760004628E7 /* UIColor+Extension.swift */,
+				777F1E3F216F6760004628E7 /* UIButton+Extension.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		777F1E40216F6760004628E7 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				777F1E41216F6760004628E7 /* UserViewController.swift */,
+				777F1E42216F6760004628E7 /* LoginViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		777F1E43216F6760004628E7 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		777F1E44216F6760004628E7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				777F1E45216F6760004628E7 /* Contact */,
+				777F1E47216F6760004628E7 /* CLFMainTabbarController.swift */,
+				777F1E48216F6760004628E7 /* Discovery */,
+				777F1E4A216F6760004628E7 /* CLFBaseViewController.swift */,
+				777F1E4B216F6760004628E7 /* Wechat */,
+				777F1E4D216F6760004628E7 /* Mine */,
+				777F1E4F216F6760004628E7 /* CLFBaseNavigationController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		777F1E45216F6760004628E7 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				777F1E46216F6760004628E7 /* ContactViewController.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		777F1E48216F6760004628E7 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				777F1E49216F6760004628E7 /* DiscoveryViewController.swift */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		777F1E4B216F6760004628E7 /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				777F1E4C216F6760004628E7 /* WechatViewController.swift */,
+			);
+			path = Wechat;
+			sourceTree = "<group>";
+		};
+		777F1E4D216F6760004628E7 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				777F1E4E216F6760004628E7 /* MineViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		777F1E50216F6760004628E7 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				777F1E51216F6760004628E7 /* CLFWechat-Bridging-Header.h */,
+				777F1E52216F6760004628E7 /* CLFProgressHUD.swift */,
+				777F1E53216F6760004628E7 /* Common.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		9FE2268CD12AB96DF8AABB73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BE468BD516DEE607ABB994F /* Pods-CLFWechat.debug.xcconfig */,
+				F6AF718253E820A52B72AF2A /* Pods-CLFWechat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C2125B0D765F90BBE03CF2F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01BE3C8081C393C21F432D82 /* Pods_CLFWechat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 777F1E36216F6748004628E7 /* Build configuration list for PBXNativeTarget "CLFWechat" */;
 			buildPhases = (
+				32D399ACF1725656A26B2C61 /* [CP] Check Pods Manifest.lock */,
 				777F1E20216F6746004628E7 /* Sources */,
 				777F1E21216F6746004628E7 /* Frameworks */,
 				777F1E22216F6746004628E7 /* Resources */,
+				C8326B0F987C8164BA7E64C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +291,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32D399ACF1725656A26B2C61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CLFWechat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8326B0F987C8164BA7E64C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CLFWechat/Pods-CLFWechat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CLFWechat/Pods-CLFWechat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		777F1E20216F6746004628E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777F1E62216F6760004628E7 /* Common.swift in Sources */,
+				777F1E58216F6760004628E7 /* UserViewController.swift in Sources */,
+				777F1E54216F6760004628E7 /* BarButton.swift in Sources */,
+				777F1E55216F6760004628E7 /* LinkButton.swift in Sources */,
+				777F1E5F216F6760004628E7 /* MineViewController.swift in Sources */,
 				777F1E2A216F6746004628E7 /* ViewController.swift in Sources */,
+				777F1E60216F6760004628E7 /* CLFBaseNavigationController.swift in Sources */,
+				777F1E5E216F6760004628E7 /* WechatViewController.swift in Sources */,
+				777F1E5C216F6760004628E7 /* DiscoveryViewController.swift in Sources */,
+				777F1E5D216F6760004628E7 /* CLFBaseViewController.swift in Sources */,
+				777F1E59216F6760004628E7 /* LoginViewController.swift in Sources */,
+				777F1E61216F6760004628E7 /* CLFProgressHUD.swift in Sources */,
+				777F1E5A216F6760004628E7 /* ContactViewController.swift in Sources */,
 				777F1E28216F6746004628E7 /* AppDelegate.swift in Sources */,
+				777F1E56216F6760004628E7 /* UIColor+Extension.swift in Sources */,
+				777F1E5B216F6760004628E7 /* CLFMainTabbarController.swift in Sources */,
+				777F1E57216F6760004628E7 /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -278,37 +495,49 @@
 		};
 		777F1E37216F6748004628E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BE468BD516DEE607ABB994F /* Pods-CLFWechat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AULHABZ7Y3;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CLFWechat/Classes/Global/Common.swift";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CLFWechat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clf.CLFWechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CLFWechat/Classes/Global/CLFWechat-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
 		777F1E38216F6748004628E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6AF718253E820A52B72AF2A /* Pods-CLFWechat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AULHABZ7Y3;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CLFWechat/Classes/Global/Common.swift";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CLFWechat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clf.CLFWechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CLFWechat/Classes/Global/CLFWechat-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};

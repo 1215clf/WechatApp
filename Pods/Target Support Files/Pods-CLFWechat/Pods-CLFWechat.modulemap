@@ -1,0 +1,6 @@
+framework module Pods_CLFWechat {
+  umbrella header "Pods-CLFWechat-umbrella.h"
+
+  export *
+  module * { export * }
+}
