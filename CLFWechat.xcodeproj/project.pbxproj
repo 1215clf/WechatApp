@@ -153,13 +153,13 @@
 		777F1E44216F6760004628E7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				777F1E45216F6760004628E7 /* Contact */,
 				777F1E47216F6760004628E7 /* CLFMainTabbarController.swift */,
-				777F1E48216F6760004628E7 /* Discovery */,
+				777F1E4F216F6760004628E7 /* CLFBaseNavigationController.swift */,
 				777F1E4A216F6760004628E7 /* CLFBaseViewController.swift */,
+				777F1E45216F6760004628E7 /* Contact */,
+				777F1E48216F6760004628E7 /* Discovery */,
 				777F1E4B216F6760004628E7 /* Wechat */,
 				777F1E4D216F6760004628E7 /* Mine */,
-				777F1E4F216F6760004628E7 /* CLFBaseNavigationController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";

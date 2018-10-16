@@ -22,5 +22,10 @@ class CLFBaseNavigationController: UINavigationController {
             .font:UIFont.systemFont(ofSize: 18)
         ]
         
+       //设置导航栏返回按钮的颜色和样式
+        navigationBar.tintColor = UIColor.white
+        let barItem = UIBarButtonItem.appearance()
+    barItem.setTitleTextAttributes([.foregroundColor:UIColor.white], for: .normal)
+        
     }
 }

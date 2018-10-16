@@ -24,34 +24,38 @@ import UIKit
  override关键字是写在子类中的, 声明这个方法是重写父类的方法.
  */
 class CLFMainTabbarController: UITabBarController {
+    
+     let textColor = RGBA(r: 0.51, g: 0.51, b: 0.51, a: 1.00)
     override func viewDidLoad() {
-        
+        self.createChildControllers()
+        // 设置tabBarItem选中与未选中的文字颜色(默认是蓝色)
+        UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor:textColor], for:UIControlState.normal);
+        UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor:kBtnGreen], for:UIControlState.selected);
     }
     
     func createChildControllers(){
         let wechatVC = WechatViewController()
         let wechatItem : UITabBarItem = UITabBarItem(title: "微信", image: #imageLiteral(resourceName: "tabbar_mainframe").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tabbar_mainframeHL").withRenderingMode(.alwaysOriginal))
         wechatVC.tabBarItem = wechatItem
+        let wechatNvc = CLFBaseNavigationController(rootViewController: wechatVC)
         
         let contactVC = ContactViewController()
         let contactItem:UITabBarItem = UITabBarItem(title: "通讯录", image: #imageLiteral(resourceName: "tabbar_contacts").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tabbar_contactsHL").withRenderingMode(.alwaysOriginal))
         contactVC.tabBarItem = contactItem
+        let contactNvc = CLFBaseNavigationController(rootViewController: contactVC)
         
         let discoverVC = DiscoverViewController()
         let discoverItem : UITabBarItem = UITabBarItem(title: "发现", image: #imageLiteral(resourceName: "tabbar_discover").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tabbar_discoverHL").withRenderingMode(.alwaysOriginal))
         discoverVC.tabBarItem = discoverItem
+        let discoverNvc = CLFBaseNavigationController(rootViewController: discoverVC)
         
         let mineVC = MineViewController()
         let mineItem:UITabBarItem = UITabBarItem(title: "我的", image: #imageLiteral(resourceName: "tabbar_me").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tabbar_meHL").withRenderingMode(.alwaysOriginal))
         mineVC.tabBarItem = mineItem
+        let mineNvc = CLFBaseNavigationController(rootViewController: mineVC)
+        let navArray = [wechatNvc,contactNvc,discoverNvc,mineNvc]
         
-        
-        
-        
-        
-        
-        
-        
+        self.viewControllers = navArray
         
     }
 }

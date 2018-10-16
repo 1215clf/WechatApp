@@ -10,6 +10,6 @@ import Foundation
 
 class WechatViewController: CLFBaseViewController {
     override func viewDidLoad() {
-        
+        view.backgroundColor = UIColor.white
     }
 }
