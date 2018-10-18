@@ -8,14 +8,17 @@
 
 import Foundation
 class CLFBaseViewController: UIViewController {
+    
     override func viewDidLoad() {
         super .viewDidLoad()
         automaticallyAdjustsScrollViewInsets = false
         view.backgroundColor = kCommonBgColor
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         UIApplication.shared.statusBarStyle = .lightContent
     }
+    
 }

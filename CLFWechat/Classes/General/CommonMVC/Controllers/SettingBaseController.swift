@@ -24,6 +24,8 @@ class SettingBaseViewController: CLFBaseViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.setup()
     }
     
     //MARK:- 懒加载
@@ -51,11 +53,99 @@ class SettingBaseViewController: CLFBaseViewController{
         return tableView
     }()
     
+    //models
+    lazy var models:[[SettingCellModel]] = {
+        return [[SettingCellModel]]()
+    }()
+    
     
     
 }
-extension SettingBaseViewController: UITableViewDataSource,UITableViewDelegate{
-    func numberOfSections(in tableView: UITableView) -> Int {
+
+// MARK:- 初始化
+extension SettingBaseViewController {
+    fileprivate func setup(){
+        //注册Cellid
+        tableView.register(SettingNomalCell.self, forCellReuseIdentifier: SettingNomalCellID)
+        tableView.register(SettingMiddleCell.self, forCellReuseIdentifier: SettingMiddleCellID)
+        tableView.register(SettingAvatarCell.self, forCellReuseIdentifier: SettingAvatarCellID)
         
+        //添加tableview
+        view.addSubview(tableView)
+    }
+}
+
+// MARK:- tableview代理方法实现
+extension SettingBaseViewController: UITableViewDataSource,UITableViewDelegate {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return self.models.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.models[section].count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let model = self.models[indexPath.section][indexPath.row]
+        var cell:SettingBaseCell?
+        var CellID:String!
+        if model.type == .avatar {
+            CellID = SettingAvatarCellID
+        }else if model.type == .middle {
+            CellID  = SettingMiddleCellID
+        }else{
+            CellID = SettingNomalCellID
+        }
+        cell = tableView.dequeueReusableCell(withIdentifier: CellID)as? SettingBaseCell
+        cell?.model = model
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        if indexPath.section == 0 && indexPath.row == 0  && isAvatar {
+            // 头像
+            return cellHeight * 2
+        } else if indexPath.section == 0 && indexPath.row == 0  && isSubAvatar {
+            return cellHeight * 2 - 8
+        }
+        return cellHeight
+    }
+    
+    //点击
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: CLFScreenW, height: headerHeight))
+        let splitLineH: CGFloat = 0.5
+        for i in 0..<2 {
+            let margin: CGFloat = i == 0 ? 0 : headerHeight - splitLineH
+            let splitLine = UIView()
+            // 设置分割线的颜色
+            if i == 0 && section == 0 {
+                splitLine.backgroundColor = UIColor.clear
+            } else {
+                splitLine.backgroundColor = kSplitLineColor
+            }
+            view.addSubview(splitLine)
+            splitLine.snp.makeConstraints({ (make) in
+                make.left.right.equalTo(view)
+                make.height.equalTo(splitLineH)
+                make.top.equalTo(view).offset(margin)
+            })
+        }
+        return view
+        }
+    }
+
+//MARK: - pushController
+extension SettingBaseViewController {
+    func pushViewController(_ viewController: UIViewController, ishidesBottomBarWhenPushed isHides: Bool = true ){
+        viewController.hidesBottomBarWhenPushed = isHides
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

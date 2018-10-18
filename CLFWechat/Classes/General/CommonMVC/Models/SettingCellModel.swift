@@ -52,9 +52,25 @@ enum SettingCellType {
     case avatar
 }
 class SettingCellModel: NSObject {
-    var icon:UIImage?
+    var icon:UIImage?//图标
+    var title:String?//标题
+    var subTitle:String?//子标题
+    var tipImg:String?//提示图
+    var tipTitle:String?//提示语
     
+    var type:SettingCellType!//类型
     
+    override init() {
+        super.init()
+    }
+    
+    init(icon: UIImage?, title: String?, tipImg: String? = nil, tipTitle: String? = nil, type: SettingCellType = .default) {
+        self.icon = icon
+        self.title = title
+        self.tipImg = tipImg
+        self.tipTitle = tipTitle
+        self.type = type
+    }
 }
 
 
