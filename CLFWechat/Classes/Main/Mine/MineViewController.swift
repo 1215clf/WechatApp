@@ -9,6 +9,6 @@
 import Foundation
 class MineViewController: CLFBaseViewController {
     override func viewDidLoad() {
-        
+        navigationItem.title = "我"
     }
 }

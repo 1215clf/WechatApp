@@ -39,6 +39,9 @@ let kSectionColor = RGBA(r: 0.94, g: 0.94, b: 0.96, a: 1.00)
 // 导航栏背景颜色
 let kNavBarBgColor = normalRGBA(r: 20, g: 20, b: 20, a: 0.9)
 
+// 分割线颜色
+let kSplitLineColor = RGBA(r: 0.78, g: 0.78, b: 0.80, a: 1.00)
+
 
 //MARK:-自定义打印方法
 //首先我们知道，swift语言的特性并没有宏这种概念，所以我们可以通过定义全局函数的形式来让所有的类都能调用

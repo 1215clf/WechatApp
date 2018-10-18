@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		146D0DE881712F1259AB70E2 /* Pods_CLFWechat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BE3C8081C393C21F432D82 /* Pods_CLFWechat.framework */; };
+		771633FD217838F1004C39EA /* SettingBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771633FB217838F1004C39EA /* SettingBaseController.swift */; };
+		771633FF21783913004C39EA /* SettingCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771633FE21783913004C39EA /* SettingCellModel.swift */; };
 		777F1E28216F6746004628E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E27216F6746004628E7 /* AppDelegate.swift */; };
 		777F1E2A216F6746004628E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E29216F6746004628E7 /* ViewController.swift */; };
 		777F1E2D216F6746004628E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777F1E2B216F6746004628E7 /* Main.storyboard */; };
@@ -28,11 +30,15 @@
 		777F1E60216F6760004628E7 /* CLFBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E4F216F6760004628E7 /* CLFBaseNavigationController.swift */; };
 		777F1E61216F6760004628E7 /* CLFProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E52216F6760004628E7 /* CLFProgressHUD.swift */; };
 		777F1E62216F6760004628E7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E53216F6760004628E7 /* Common.swift */; };
+		77C495742177234D0075B83B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C495732177234D0075B83B /* SettingViewController.swift */; };
+		77C49578217724500075B83B /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C49577217724500075B83B /* EmotionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01BE3C8081C393C21F432D82 /* Pods_CLFWechat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CLFWechat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE468BD516DEE607ABB994F /* Pods-CLFWechat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLFWechat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CLFWechat/Pods-CLFWechat.debug.xcconfig"; sourceTree = "<group>"; };
+		771633FB217838F1004C39EA /* SettingBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingBaseController.swift; sourceTree = "<group>"; };
+		771633FE21783913004C39EA /* SettingCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCellModel.swift; sourceTree = "<group>"; };
 		777F1E24216F6746004628E7 /* CLFWechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLFWechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		777F1E27216F6746004628E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		777F1E29216F6746004628E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +62,8 @@
 		777F1E51216F6760004628E7 /* CLFWechat-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLFWechat-Bridging-Header.h"; sourceTree = "<group>"; };
 		777F1E52216F6760004628E7 /* CLFProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLFProgressHUD.swift; sourceTree = "<group>"; };
 		777F1E53216F6760004628E7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		77C495732177234D0075B83B /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		77C49577217724500075B83B /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
 		F6AF718253E820A52B72AF2A /* Pods-CLFWechat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLFWechat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CLFWechat/Pods-CLFWechat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +79,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		771633F8217838F1004C39EA /* CommonMVC */ = {
+			isa = PBXGroup;
+			children = (
+				771633F9217838F1004C39EA /* Models */,
+				771633FA217838F1004C39EA /* Controllers */,
+				771633FC217838F1004C39EA /* Views */,
+			);
+			path = CommonMVC;
+			sourceTree = "<group>";
+		};
+		771633F9217838F1004C39EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				771633FE21783913004C39EA /* SettingCellModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		771633FA217838F1004C39EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				771633FB217838F1004C39EA /* SettingBaseController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		771633FC217838F1004C39EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		777F1E1B216F6746004628E7 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +162,7 @@
 			children = (
 				777F1E3B216F6760004628E7 /* BarButton.swift */,
 				777F1E3C216F6760004628E7 /* LinkButton.swift */,
+				771633F8217838F1004C39EA /* CommonMVC */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -192,6 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				777F1E4E216F6760004628E7 /* MineViewController.swift */,
+				77C495732177234D0075B83B /* SettingViewController.swift */,
+				77C49577217724500075B83B /* EmotionViewController.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -337,11 +381,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77C49578217724500075B83B /* EmotionViewController.swift in Sources */,
 				777F1E62216F6760004628E7 /* Common.swift in Sources */,
 				777F1E58216F6760004628E7 /* UserViewController.swift in Sources */,
 				777F1E54216F6760004628E7 /* BarButton.swift in Sources */,
 				777F1E55216F6760004628E7 /* LinkButton.swift in Sources */,
+				771633FF21783913004C39EA /* SettingCellModel.swift in Sources */,
 				777F1E5F216F6760004628E7 /* MineViewController.swift in Sources */,
+				77C495742177234D0075B83B /* SettingViewController.swift in Sources */,
 				777F1E2A216F6746004628E7 /* ViewController.swift in Sources */,
 				777F1E60216F6760004628E7 /* CLFBaseNavigationController.swift in Sources */,
 				777F1E5E216F6760004628E7 /* WechatViewController.swift in Sources */,
@@ -350,6 +397,7 @@
 				777F1E59216F6760004628E7 /* LoginViewController.swift in Sources */,
 				777F1E61216F6760004628E7 /* CLFProgressHUD.swift in Sources */,
 				777F1E5A216F6760004628E7 /* ContactViewController.swift in Sources */,
+				771633FD217838F1004C39EA /* SettingBaseController.swift in Sources */,
 				777F1E28216F6746004628E7 /* AppDelegate.swift in Sources */,
 				777F1E56216F6760004628E7 /* UIColor+Extension.swift in Sources */,
 				777F1E5B216F6760004628E7 /* CLFMainTabbarController.swift in Sources */,
