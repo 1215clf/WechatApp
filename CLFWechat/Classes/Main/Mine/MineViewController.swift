@@ -7,8 +7,32 @@
 //
 
 import Foundation
-class MineViewController: CLFBaseViewController {
+class MineViewController: SettingBaseViewController {
+    
     override func viewDidLoad() {
+        super.viewDidLoad()
+        self.setup()
+        
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //设置数据源
+        self.models = UIDataManager.getMineVCData()
+        self.tableView.reloadData()
+    }
+    
+}
+
+//MARK:- 初始化
+extension MineViewController {
+    fileprivate func setup(){
+        
+       
         navigationItem.title = "我"
+        isAvatar = true
+        
+//        view.addSubview(self.tableView)
     }
 }

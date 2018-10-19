@@ -22,11 +22,7 @@ class SettingBaseViewController: CLFBaseViewController{
     var isAvatar:Bool = false
     var isSubAvatar:Bool = false
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.setup()
-    }
+    
     
     //MARK:- 懒加载
     //tableview
@@ -58,7 +54,11 @@ class SettingBaseViewController: CLFBaseViewController{
         return [[SettingCellModel]]()
     }()
     
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.setup()
+    }
     
 }
 
@@ -79,6 +79,8 @@ extension SettingBaseViewController {
 extension SettingBaseViewController: UITableViewDataSource,UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        
+        CLFLog(self.models)
         return self.models.count
     }
     
@@ -98,6 +100,8 @@ extension SettingBaseViewController: UITableViewDataSource,UITableViewDelegate {
             CellID = SettingNomalCellID
         }
         cell = tableView.dequeueReusableCell(withIdentifier: CellID)as? SettingBaseCell
+        
+        CLFLog(cell)
         cell?.model = model
         return cell!
     }
@@ -132,15 +136,16 @@ extension SettingBaseViewController: UITableViewDataSource,UITableViewDelegate {
                 splitLine.backgroundColor = kSplitLineColor
             }
             view.addSubview(splitLine)
+            
             splitLine.snp.makeConstraints({ (make) in
                 make.left.right.equalTo(view)
                 make.height.equalTo(splitLineH)
                 make.top.equalTo(view).offset(margin)
             })
         }
-        return view
+            return view
         }
-    }
+}
 
 //MARK: - pushController
 extension SettingBaseViewController {

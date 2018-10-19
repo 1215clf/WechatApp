@@ -14,10 +14,10 @@
 		7716340321785FAF004C39EA /* SettingNomalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7716340221785FAF004C39EA /* SettingNomalCell.swift */; };
 		7716340521785FCD004C39EA /* SettingAvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7716340421785FCD004C39EA /* SettingAvatarCell.swift */; };
 		7716340721785FF6004C39EA /* SettingMiddleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7716340621785FF6004C39EA /* SettingMiddleCell.swift */; };
+		77163409217898A7004C39EA /* UIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77163408217898A7004C39EA /* UIDataManager.swift */; };
 		777F1E28216F6746004628E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E27216F6746004628E7 /* AppDelegate.swift */; };
 		777F1E2A216F6746004628E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E29216F6746004628E7 /* ViewController.swift */; };
 		777F1E2D216F6746004628E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777F1E2B216F6746004628E7 /* Main.storyboard */; };
-		777F1E2F216F6748004628E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 777F1E2E216F6748004628E7 /* Assets.xcassets */; };
 		777F1E32216F6748004628E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777F1E30216F6748004628E7 /* LaunchScreen.storyboard */; };
 		777F1E54216F6760004628E7 /* BarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E3B216F6760004628E7 /* BarButton.swift */; };
 		777F1E55216F6760004628E7 /* LinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E3C216F6760004628E7 /* LinkButton.swift */; };
@@ -36,6 +36,7 @@
 		777F1E62216F6760004628E7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E53216F6760004628E7 /* Common.swift */; };
 		77C495742177234D0075B83B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C495732177234D0075B83B /* SettingViewController.swift */; };
 		77C49578217724500075B83B /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C49577217724500075B83B /* EmotionViewController.swift */; };
+		77E180E92179D01700C5894C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E180E82179D01700C5894C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,11 +48,11 @@
 		7716340221785FAF004C39EA /* SettingNomalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingNomalCell.swift; sourceTree = "<group>"; };
 		7716340421785FCD004C39EA /* SettingAvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingAvatarCell.swift; sourceTree = "<group>"; };
 		7716340621785FF6004C39EA /* SettingMiddleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMiddleCell.swift; sourceTree = "<group>"; };
+		77163408217898A7004C39EA /* UIDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDataManager.swift; sourceTree = "<group>"; };
 		777F1E24216F6746004628E7 /* CLFWechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLFWechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		777F1E27216F6746004628E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		777F1E29216F6746004628E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		777F1E2C216F6746004628E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		777F1E2E216F6748004628E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		777F1E31216F6748004628E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		777F1E33216F6748004628E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		777F1E3B216F6760004628E7 /* BarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButton.swift; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		777F1E53216F6760004628E7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		77C495732177234D0075B83B /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		77C49577217724500075B83B /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
+		77E180E82179D01700C5894C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6AF718253E820A52B72AF2A /* Pods-CLFWechat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLFWechat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CLFWechat/Pods-CLFWechat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,8 +150,8 @@
 				777F1E39216F6760004628E7 /* Classes */,
 				777F1E27216F6746004628E7 /* AppDelegate.swift */,
 				777F1E29216F6746004628E7 /* ViewController.swift */,
+				77E180E82179D01700C5894C /* Assets.xcassets */,
 				777F1E2B216F6746004628E7 /* Main.storyboard */,
-				777F1E2E216F6748004628E7 /* Assets.xcassets */,
 				777F1E30216F6748004628E7 /* LaunchScreen.storyboard */,
 				777F1E33216F6748004628E7 /* Info.plist */,
 			);
@@ -257,6 +259,7 @@
 			children = (
 				777F1E51216F6760004628E7 /* CLFWechat-Bridging-Header.h */,
 				777F1E52216F6760004628E7 /* CLFProgressHUD.swift */,
+				77163408217898A7004C39EA /* UIDataManager.swift */,
 				777F1E53216F6760004628E7 /* Common.swift */,
 			);
 			path = Global;
@@ -307,6 +310,7 @@
 		777F1E1C216F6746004628E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CLF;
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = clf;
@@ -340,7 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				777F1E32216F6748004628E7 /* LaunchScreen.storyboard in Resources */,
-				777F1E2F216F6748004628E7 /* Assets.xcassets in Resources */,
+				77E180E92179D01700C5894C /* Assets.xcassets in Resources */,
 				777F1E2D216F6746004628E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +418,7 @@
 				771633FD217838F1004C39EA /* SettingBaseController.swift in Sources */,
 				777F1E28216F6746004628E7 /* AppDelegate.swift in Sources */,
 				777F1E56216F6760004628E7 /* UIColor+Extension.swift in Sources */,
+				77163409217898A7004C39EA /* UIDataManager.swift in Sources */,
 				777F1E5B216F6760004628E7 /* CLFMainTabbarController.swift in Sources */,
 				777F1E57216F6760004628E7 /* UIButton+Extension.swift in Sources */,
 				7716340721785FF6004C39EA /* SettingMiddleCell.swift in Sources */,
