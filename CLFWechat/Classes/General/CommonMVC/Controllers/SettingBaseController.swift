@@ -42,6 +42,7 @@ class SettingBaseViewController: CLFBaseViewController{
         tableView.backgroundColor = kSectionColor
         tableView.contentInset = UIEdgeInsetsMake(58, 0, 44, 0)
         tableView.scrollIndicatorInsets = UIEdgeInsetsMake(64, 0, 44, 0)
+        
         let footView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0.4))
         footView.backgroundColor = kSplitLineColor
         tableView.tableFooterView = footView
@@ -80,7 +81,7 @@ extension SettingBaseViewController: UITableViewDataSource,UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         
-        CLFLog(self.models)
+//        CLFLog(self.models)
         return self.models.count
     }
     
@@ -101,8 +102,9 @@ extension SettingBaseViewController: UITableViewDataSource,UITableViewDelegate {
         }
         cell = tableView.dequeueReusableCell(withIdentifier: CellID)as? SettingBaseCell
         
-        CLFLog(cell)
+//        CLFLog(cell)
         cell?.model = model
+       
         return cell!
     }
     
@@ -125,26 +127,15 @@ extension SettingBaseViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let view = UIView(frame: CGRect(x: 0, y: 0, width: CLFScreenW, height: headerHeight))
-        let splitLineH: CGFloat = 0.5
-        for i in 0..<2 {
-            let margin: CGFloat = i == 0 ? 0 : headerHeight - splitLineH
-            let splitLine = UIView()
-            // 设置分割线的颜色
-            if i == 0 && section == 0 {
-                splitLine.backgroundColor = UIColor.clear
-            } else {
-                splitLine.backgroundColor = kSplitLineColor
-            }
-            view.addSubview(splitLine)
-            
-            splitLine.snp.makeConstraints({ (make) in
-                make.left.right.equalTo(view)
-                make.height.equalTo(splitLineH)
-                make.top.equalTo(view).offset(margin)
-            })
-        }
             return view
-        }
+    }
+ 
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.01
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return headerHeight
+    }
 }
 
 //MARK: - pushController

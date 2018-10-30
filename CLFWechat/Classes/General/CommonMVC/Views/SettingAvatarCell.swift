@@ -7,6 +7,10 @@
 //
 
 import Foundation
+import UIKit
+
+
+
 class SettingAvatarCell: SettingBaseCell {
     override var model: SettingCellModel?{
         //willSet是值将要改变时触发，存在一个newValue的变量。
@@ -41,7 +45,12 @@ class SettingAvatarCell: SettingBaseCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-       self.setUp()
+        self.setUp()
+        //设置右边箭头
+        self.accessoryType = .disclosureIndicator
+    }
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
 
 }
@@ -78,6 +87,34 @@ extension SettingAvatarCell{
 
 extension SettingAvatarCell{
     fileprivate func setModel(){
+        iconImgView.isHidden = false
+        iconImgView.image = model?.icon
+        titleLabel.text = model?.title
+        subTitleLabel.text = model?.subTitle
+        rigntImgView.image = #imageLiteral(resourceName: "setting_myQR")
         
+        titleLabel.sizeToFit()
+        subTitleLabel.sizeToFit()
+        
+        iconImgView.snp.remakeConstraints { (make) in
+            make.left.equalTo(self.snp.left).offset(15)
+            make.top.equalTo(self.snp.top).offset(8)
+            make.bottom.equalTo(self.snp.bottom).offset(-8)
+            make.width.equalTo(iconImgView.snp.height)
+        }
+        titleLabel.snp.remakeConstraints { (make) in
+            make.left.equalTo(iconImgView.snp.right).offset(15)
+            make.bottom.equalTo(iconImgView.snp.centerY)
+        }
+        subTitleLabel.snp.remakeConstraints { (make) in
+            make.left.equalTo(titleLabel.snp.left)
+            make.top.equalTo(iconImgView.snp.centerY).offset(10)
+        }
+        rigntImgView.snp.remakeConstraints { (make) in
+            make.right.equalTo(self.snp.right).offset(-30)
+            make.width.height.equalTo(18)
+            make.centerY.equalTo(iconImgView.snp.centerY)
+            
+        }
     }
 }

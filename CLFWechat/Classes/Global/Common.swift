@@ -61,3 +61,15 @@ func CLFLog<T>(_ message : T,file : String = #file,funcName : String = #function
     
     #endif
 }
+
+
+//MARK: SnapKit
+extension ConstraintView {
+    var lfSnp:ConstraintAttributesDSL  {
+        if #available(iOS 11.0, *) {
+            return self.safeAreaLayoutGuide.snp
+        }else{
+            return self.snp
+        }
+    }
+}

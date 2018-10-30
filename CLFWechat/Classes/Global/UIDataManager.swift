@@ -14,7 +14,7 @@ class UIDataManager: NSObject {
     class func getMineVCData() -> [[SettingCellModel]]{
         //待处理user信息
         let userModel = SettingCellModel(icon:#imageLiteral(resourceName: "SettingProfileHead") , title: "用户名", tipImg: nil, tipTitle: nil, type: .avatar)
-        userModel.subTitle = ""
+        userModel.subTitle = "123456"
         return [
             [userModel],
             [SettingCellModel(icon:#imageLiteral(resourceName: "MoreMyBankCard") , title: "钱包")],
