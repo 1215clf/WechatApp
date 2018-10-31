@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class SettingViewController: SettingBaseViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "设置"
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.models = UIDataManager.getSetVCData()
+        self.tableView.reloadData()
+    }
+    
+    
+}

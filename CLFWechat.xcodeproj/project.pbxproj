@@ -36,6 +36,9 @@
 		777F1E62216F6760004628E7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777F1E53216F6760004628E7 /* Common.swift */; };
 		77C495742177234D0075B83B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C495732177234D0075B83B /* SettingViewController.swift */; };
 		77C49578217724500075B83B /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C49577217724500075B83B /* EmotionViewController.swift */; };
+		77DC416F2189760F00CF8671 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DC416E2189760F00CF8671 /* UserInfoViewController.swift */; };
+		77DC41712189762200CF8671 /* MyQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DC41702189762200CF8671 /* MyQRViewController.swift */; };
+		77DC41732189767700CF8671 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DC41722189767700CF8671 /* AlbumViewController.swift */; };
 		77E180E92179D01700C5894C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E180E82179D01700C5894C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +76,9 @@
 		777F1E53216F6760004628E7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		77C495732177234D0075B83B /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		77C49577217724500075B83B /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
+		77DC416E2189760F00CF8671 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		77DC41702189762200CF8671 /* MyQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRViewController.swift; sourceTree = "<group>"; };
+		77DC41722189767700CF8671 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		77E180E82179D01700C5894C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6AF718253E820A52B72AF2A /* Pods-CLFWechat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLFWechat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CLFWechat/Pods-CLFWechat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -250,6 +256,9 @@
 				777F1E4E216F6760004628E7 /* MineViewController.swift */,
 				77C495732177234D0075B83B /* SettingViewController.swift */,
 				77C49577217724500075B83B /* EmotionViewController.swift */,
+				77DC416E2189760F00CF8671 /* UserInfoViewController.swift */,
+				77DC41702189762200CF8671 /* MyQRViewController.swift */,
+				77DC41722189767700CF8671 /* AlbumViewController.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -404,6 +413,7 @@
 				777F1E54216F6760004628E7 /* BarButton.swift in Sources */,
 				777F1E55216F6760004628E7 /* LinkButton.swift in Sources */,
 				771633FF21783913004C39EA /* SettingCellModel.swift in Sources */,
+				77DC41712189762200CF8671 /* MyQRViewController.swift in Sources */,
 				777F1E5F216F6760004628E7 /* MineViewController.swift in Sources */,
 				7716340121785D8F004C39EA /* SettingBaseCell.swift in Sources */,
 				77C495742177234D0075B83B /* SettingViewController.swift in Sources */,
@@ -419,10 +429,12 @@
 				777F1E28216F6746004628E7 /* AppDelegate.swift in Sources */,
 				777F1E56216F6760004628E7 /* UIColor+Extension.swift in Sources */,
 				77163409217898A7004C39EA /* UIDataManager.swift in Sources */,
+				77DC416F2189760F00CF8671 /* UserInfoViewController.swift in Sources */,
 				777F1E5B216F6760004628E7 /* CLFMainTabbarController.swift in Sources */,
 				777F1E57216F6760004628E7 /* UIButton+Extension.swift in Sources */,
 				7716340721785FF6004C39EA /* SettingMiddleCell.swift in Sources */,
 				7716340521785FCD004C39EA /* SettingAvatarCell.swift in Sources */,
+				77DC41732189767700CF8671 /* AlbumViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

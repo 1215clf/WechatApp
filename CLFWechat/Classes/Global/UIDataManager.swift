@@ -28,4 +28,20 @@ class UIDataManager: NSObject {
         ]
         
     }
+    //设置界面数据
+    class func getSetVCData() -> [[SettingCellModel]] {
+        return [[SettingCellModel(icon: nil, title: "账号与安全")],
+                [SettingCellModel(icon: nil, title: "新消息通知"),
+                 SettingCellModel(icon: nil, title: "隐私"),
+                 SettingCellModel(icon: nil, title: "通用")],
+                [SettingCellModel(icon: nil, title: "帮助与反馈"),
+                 SettingCellModel(icon: nil, title: "关于微信", tipImg: nil, tipTitle: "版本6.7.3", type: .default)],
+                [SettingCellModel(icon: nil, title: "插件")],
+                [SettingCellModel(icon: nil, title: "切换账号", tipImg: nil, tipTitle: nil, type: .middle)],
+                [SettingCellModel(icon: nil, title: "退出登录", tipImg: nil, tipTitle: nil, type: .middle)]
+        ]
+    }
+    
+    
+    
 }

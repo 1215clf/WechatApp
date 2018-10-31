@@ -35,4 +35,17 @@ extension MineViewController {
         
 //        view.addSubview(self.tableView)
     }
+    
+   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    if indexPath.section == 0 {
+        self.pushViewController(UserInfoViewController())
+    }
+    //设置界面
+    else if indexPath.section == 3 {
+            self.pushViewController(SettingViewController())
+        }
+    }
+    
+    
 }

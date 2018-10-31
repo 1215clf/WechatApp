@@ -111,8 +111,6 @@ extension SettingNomalCell{
             }
             titleLabel.snp.remakeConstraints { (make) in
                 make.left.equalTo(iconView.snp.right).offset(15)
-                
-//                make.centerY.equalTo(self.snp.centerY)
                 make.top.bottom.equalTo(self)
             }
         }else{
@@ -130,23 +128,21 @@ extension SettingNomalCell{
                 make.centerY.equalTo(self.snp.centerY)
             }
         }
+        
         if model?.tipTitle != nil {
-            tipTitleLabel.snp.remakeConstraints {
-                $0.top.bottom.equalTo(self)
-            }
+            CLFLog(model?.tipTitle)
+
             if model?.tipImg != nil {
                 tipTitleLabel.snp.remakeConstraints {
                      $0.right.equalTo(tipImgView.snp.left).offset(5)
+                     $0.top.bottom.equalTo(self)
                 }
             }else{
                 tipTitleLabel.snp.remakeConstraints {
-                    $0.right.equalTo(self.snp.left).offset(rightMagin)
+                    $0.right.equalTo(self.snp.right).offset(rightMagin)
+                    $0.top.bottom.equalTo(self)
                 }
             }
         }
-        
-        
     }
-    
-    
 }

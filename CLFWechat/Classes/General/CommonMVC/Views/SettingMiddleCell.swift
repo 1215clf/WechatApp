@@ -22,12 +22,14 @@ class SettingMiddleCell: SettingBaseCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-
-        titleLabel.snp.makeConstraints { (make) in
-            make.left.top.right.bottom.equalTo(self)
-        }
         
         self.addSubview(titleLabel)
+        
+        titleLabel.snp.makeConstraints { (make) in
+            make.centerX.equalTo(self.snp.centerX)
+            make.centerY.equalTo(self.snp.centerY)
+
+        }
         
     }
     required init?(coder aDecoder: NSCoder) {
