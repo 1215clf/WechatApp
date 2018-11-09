@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+class MyQRViewController: CLFBaseViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "我的二维码"
+    }
+}

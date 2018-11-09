@@ -42,6 +42,12 @@ class UIDataManager: NSObject {
         ]
     }
     
+    class func  getUserInfoData() -> [[SettingCellModel]] {
+        return [
+        
+        ]
+    }
+    
     
     
 }

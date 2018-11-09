@@ -13,6 +13,6 @@
 
 #import "SVProgressHUD.h"
 
-
+#import <NIMSDK/NIMSDK.h>
 
 #endif /* CLFWechat_Bridging_Header_h */

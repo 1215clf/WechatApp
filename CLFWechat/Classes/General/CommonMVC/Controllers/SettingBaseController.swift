@@ -19,7 +19,9 @@ fileprivate let SettingCellID = "SettingCellID"
 class SettingBaseViewController: CLFBaseViewController{
     
     //MARK:- 标记属性
+    //我的页面头像
     var isAvatar:Bool = false
+    //个人信息头像
     var isSubAvatar:Bool = false
     
     
