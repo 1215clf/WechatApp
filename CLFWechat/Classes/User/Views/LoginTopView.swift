@@ -8,5 +8,13 @@
 
 import Foundation
 class LoginTopView: UIView {
-    lazy var phoneTip
+  
+    
+    
+    
+    
+}
+
+extension LoginTopView{
+
 }

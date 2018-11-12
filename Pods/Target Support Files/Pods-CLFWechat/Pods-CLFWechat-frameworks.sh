@@ -143,10 +143,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${PODS_ROOT}/NIMSDK/NIMSDK/NIMSDK.framework"
+  install_framework "${PODS_ROOT}/NIMSDK/NIMAVChat/NIMAVChat.framework"
+  install_framework "${PODS_ROOT}/NIMSDK/NIMAVChat/NVS.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${PODS_ROOT}/NIMSDK/NIMSDK/NIMSDK.framework"
+  install_framework "${PODS_ROOT}/NIMSDK/NIMAVChat/NIMAVChat.framework"
+  install_framework "${PODS_ROOT}/NIMSDK/NIMAVChat/NVS.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
 fi
